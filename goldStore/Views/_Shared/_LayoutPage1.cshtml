@@ -1,0 +1,147 @@
+﻿  
+@Html.Partial("~/Views/_Shared/_header.cshtml")
+
+      <!-- Start Bradcaump area -->
+<div class="ht__bradcaump__area" style="background: rgba(0, 0, 0, 0) url(images/bg/4.jpg) no-repeat scroll center center / cover ;">
+    <div class="ht__bradcaump__wrap">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="bradcaump__inner">
+                        <nav class="bradcaump-inner">
+                            <a class="breadcrumb-item" href="index.html">Home</a>
+                            <span class="brd-separetor"><i class="zmdi zmdi-chevron-right"></i></span>
+                            <span class="breadcrumb-item active">Products</span>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End Bradcaump area -->
+<!-- Start Product Grid -->
+<section class="htc__product__grid bg__white ptb--100">
+    <div class="container">
+        <div class="row">
+
+
+
+            @RenderBody()
+            <div class="col-lg-3 col-lg-pull-9 col-md-3 col-md-pull-9 col-sm-12 col-xs-12 smt-40 xmt-40">
+                <div class="htc__product__leftsidebar">
+                    <!-- Start Prize Range -->
+                    <div class="htc-grid-range">
+                        <h4 class="title__line--4">Price</h4>
+                        <div class="content-shopby">
+                            <div class="price_filter s-filter clear">
+                                <form action="#" method="GET">
+                                    <div id="slider-range"></div>
+                                    <div class="slider__range--output">
+                                        <div class="price__output--wrap">
+                                            <div class="price--output">
+                                                <span>Price :</span><input type="text" id="amount" readonly>
+                                            </div>
+                                            <div class="price--filter">
+                                                <a href="#">Filter</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Prize Range -->
+                    <!-- Start Category Area -->
+                    <div class="htc__category">
+                        <h4 class="title__line--4">categories</h4>
+                        @{ 
+
+                            Html.RenderAction("PartialCategory");
+                        }
+
+
+                        <ul class="ht__cat__list">
+                            <li><a href="#">Clothing</a></li>
+                            <li><a href="#">Bags</a></li>
+                            <li><a href="#">Shoes</a></li>
+                            <li><a href="#">Jewelry</a></li>
+                            <li><a href="#">Accessories</a></li>
+                            <li><a href="#">Food / Drink Store</a></li>
+                            <li><a href="#">Gift Store</a></li>
+                            <li><a href="#">Accessories</a></li>
+                            <li><a href="#">Watch</a></li>
+                            <li><a href="#">Other</a></li>
+                        </ul>
+                    </div>
+                    <!-- End Category Area -->
+                    <!-- Start Pro Color -->
+                    <div class="ht__pro__color">
+                        <h4 class="title__line--4">color</h4>
+                        <ul class="ht__color__list">
+                            <li class="grey"><a href="#">grey</a></li>
+                            <li class="lamon"><a href="#">lamon</a></li>
+                            <li class="white"><a href="#">white</a></li>
+                            <li class="red"><a href="#">red</a></li>
+                            <li class="black"><a href="#">black</a></li>
+                            <li class="pink"><a href="#">pink</a></li>
+                        </ul>
+                    </div>
+                    <!-- End Pro Color -->
+                    <!-- Start Pro Size -->
+                   
+                    <!-- End Pro Size -->
+                    <!-- Start Tag Area -->
+                    
+                    <!-- End Tag Area -->
+                    <!-- Start Compare Area -->
+                    
+                    <!-- End Compare Area -->
+                    <!-- Start Best Sell Area -->
+                    
+                    <!-- End Best Sell Area -->
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End Product Grid -->
+<!-- Start Brand Area -->
+<div class="htc__brand__area bg__cat--4">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="ht__brand__inner">
+                    <ul class="brand__list owl-carousel clearfix">
+                        <li><a href="#"><img src="images/brand/1.png" alt="brand images"></a></li>
+                        <li><a href="#"><img src="images/brand/2.png" alt="brand images"></a></li>
+                        <li><a href="#"><img src="images/brand/3.png" alt="brand images"></a></li>
+                        <li><a href="#"><img src="images/brand/4.png" alt="brand images"></a></li>
+                        <li><a href="#"><img src="images/brand/5.png" alt="brand images"></a></li>
+                        <li><a href="#"><img src="images/brand/5.png" alt="brand images"></a></li>
+                        <li><a href="#"><img src="images/brand/1.png" alt="brand images"></a></li>
+                        <li><a href="#"><img src="images/brand/2.png" alt="brand images"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End Brand Area -->
+<!-- Start Banner Area -->
+<div class="htc__banner__area">
+    <ul class="banner__list owl-carousel owl-theme clearfix">
+        <li><a href="product-details.html"><img src="images/banner/bn-3/1.jpg" alt="banner images"></a></li>
+        <li><a href="product-details.html"><img src="images/banner/bn-3/2.jpg" alt="banner images"></a></li>
+        <li><a href="product-details.html"><img src="images/banner/bn-3/3.jpg" alt="banner images"></a></li>
+        <li><a href="product-details.html"><img src="images/banner/bn-3/4.jpg" alt="banner images"></a></li>
+        <li><a href="product-details.html"><img src="images/banner/bn-3/5.jpg" alt="banner images"></a></li>
+        <li><a href="product-details.html"><img src="images/banner/bn-3/6.jpg" alt="banner images"></a></li>
+        <li><a href="product-details.html"><img src="images/banner/bn-3/1.jpg" alt="banner images"></a></li>
+        <li><a href="product-details.html"><img src="images/banner/bn-3/2.jpg" alt="banner images"></a></li>
+    </ul>
+</div>
+<!-- End Banner Area -->
+<!-- End Banner Area -->
+
+@Html.Partial("~/Views/_Shared/_footer.cshtml")

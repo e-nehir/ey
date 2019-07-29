@@ -1064,15 +1064,15 @@
     <Content Include="Areas\Panel\Content\vendors\wysiwyg\bootstrap-wysihtml5.css" />
     <Content Include="Areas\Panel\Content\vendors\wysiwyg\bootstrap-wysihtml5.js" />
     <Content Include="Areas\Panel\Content\vendors\wysiwyg\wysihtml5-0.3.0.js" />
-    <Content Include="Areas\Panel\Models\GSModel.Context.tt">
+    <Content Include="Areas\Panel\Models\altin.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>GSModel.edmx</DependentUpon>
-      <LastGenOutput>GSModel.Context.cs</LastGenOutput>
+      <DependentUpon>altin.edmx</DependentUpon>
+      <LastGenOutput>altin.Context.cs</LastGenOutput>
     </Content>
-    <Content Include="Areas\Panel\Models\GSModel.tt">
+    <Content Include="Areas\Panel\Models\altin.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>GSModel.edmx</DependentUpon>
-      <LastGenOutput>GSModel.cs</LastGenOutput>
+      <DependentUpon>altin.edmx</DependentUpon>
+      <LastGenOutput>altin.cs</LastGenOutput>
     </Content>
     <Content Include="Areas\Panel\Views\Shared\sample\buttons.html" />
     <Content Include="Areas\Panel\Views\Shared\sample\calendar.html" />
@@ -1083,7 +1083,162 @@
     <Content Include="Areas\Panel\Views\Shared\sample\signup.html" />
     <Content Include="Areas\Panel\Views\Shared\sample\stats.html" />
     <Content Include="Areas\Panel\Views\Shared\sample\tables.html" />
+    <Content Include="asset\css\ajax-loader.gif" />
+    <Content Include="asset\css\bootstrap.min.css" />
+    <Content Include="asset\css\core.css" />
+    <Content Include="asset\css\custom.css" />
+    <Content Include="asset\css\font-awesome.css" />
+    <Content Include="asset\css\jquery-ui.min.css" />
+    <Content Include="asset\css\material-design-iconic-font.min.css" />
+    <Content Include="asset\css\owl.carousel.min.css" />
+    <Content Include="asset\css\owl.theme.default.min.css" />
+    <Content Include="asset\css\owl.video.play.png" />
+    <Content Include="asset\css\plugins\ajax-loader.gif" />
+    <Content Include="asset\css\plugins\AjaxLoader.gif" />
+    <Content Include="asset\css\plugins\animate-slider.css" />
+    <Content Include="asset\css\plugins\animate.css" />
+    <Content Include="asset\css\plugins\animation.css" />
+    <Content Include="asset\css\plugins\fonts\slick.svg" />
+    <Content Include="asset\css\plugins\images\ui-icons_444444_256x240.png" />
+    <Content Include="asset\css\plugins\images\ui-icons_555555_256x240.png" />
+    <Content Include="asset\css\plugins\images\ui-icons_777620_256x240.png" />
+    <Content Include="asset\css\plugins\images\ui-icons_777777_256x240.png" />
+    <Content Include="asset\css\plugins\images\ui-icons_cc0000_256x240.png" />
+    <Content Include="asset\css\plugins\images\ui-icons_ffffff_256x240.png" />
+    <Content Include="asset\css\plugins\jquery-ui.css" />
+    <Content Include="asset\css\plugins\meanmenu.css" />
+    <Content Include="asset\css\plugins\slick-theme.css" />
+    <Content Include="asset\css\plugins\slick.css" />
+    <Content Include="asset\css\responsive.css" />
+    <Content Include="asset\css\shortcode\default.css" />
+    <Content Include="asset\css\shortcode\footer.css" />
+    <Content Include="asset\css\shortcode\header.css" />
+    <Content Include="asset\css\shortcode\shortcodes.css" />
+    <Content Include="asset\css\shortcode\slider.css" />
+    <Content Include="asset\css\simple-line-icons.css" />
+    <Content Include="asset\css\style-customizer.css" />
+    <Content Include="asset\fonts\fontawesome-webfont.svg" />
+    <Content Include="asset\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="asset\fonts\Material-Design-Iconic-Font.svg" />
+    <Content Include="asset\fonts\Simple-Line-Icons.svg" />
+    <Content Include="asset\images\banner\big-img\1.png" />
+    <Content Include="asset\images\banner\big-img\2.png" />
+    <Content Include="asset\images\bg\1.jpg" />
+    <Content Include="asset\images\bg\4.jpg" />
+    <Content Include="asset\images\blog\big-images\1.jpg" />
+    <Content Include="asset\images\blog\bl-sm-2\1.png" />
+    <Content Include="asset\images\blog\bl-sm-2\2.png" />
+    <Content Include="asset\images\blog\bl-sm-2\3.png" />
+    <Content Include="asset\images\blog\blog-img\1.jpg" />
+    <Content Include="asset\images\blog\blog-img\2.jpg" />
+    <Content Include="asset\images\blog\blog-img\3.jpg" />
+    <Content Include="asset\images\blog\md-img\1.jpg" />
+    <Content Include="asset\images\blog\md-img\2.jpg" />
+    <Content Include="asset\images\brand\1.png" />
+    <Content Include="asset\images\brand\2.png" />
+    <Content Include="asset\images\brand\3.png" />
+    <Content Include="asset\images\brand\4.png" />
+    <Content Include="asset\images\brand\5.png" />
+    <Content Include="asset\images\cart\1.jpg" />
+    <Content Include="asset\images\cart\1.png" />
+    <Content Include="asset\images\cart\2.jpg" />
+    <Content Include="asset\images\cart\2.png" />
+    <Content Include="asset\images\cart\3.jpg" />
+    <Content Include="asset\images\cart\4.jpg" />
+    <Content Include="asset\images\comment\1.png" />
+    <Content Include="asset\images\comment\2.png" />
+    <Content Include="asset\images\comment\3.png" />
+    <Content Include="asset\images\favicon.ico" />
+    <Content Include="asset\images\icons\ajax-loader.gif" />
+    <Content Include="asset\images\icons\arrow-down-long.png" />
+    <Content Include="asset\images\icons\close-20.png" />
+    <Content Include="asset\images\icons\close.png" />
+    <Content Include="asset\images\icons\loading.gif" />
+    <Content Include="asset\images\icons\map-2.png" />
+    <Content Include="asset\images\icons\map.png" />
+    <Content Include="asset\images\icons\next.png" />
+    <Content Include="asset\images\icons\prev.png" />
+    <Content Include="asset\images\icons\select-option-white.png" />
+    <Content Include="asset\images\icons\select-option.png" />
+    <Content Include="asset\images\logo\4.png" />
+    <Content Include="asset\images\others\shape\1.png" />
+    <Content Include="asset\images\others\shape\2.png" />
+    <Content Include="asset\images\others\shape\3.png" />
+    <Content Include="asset\images\others\shape\4.png" />
+    <Content Include="asset\images\others\shape\5.png" />
+    <Content Include="asset\images\others\shape\lan.png" />
+    <Content Include="asset\images\others\shape\line.png" />
+    <Content Include="asset\images\others\shape\new.png" />
+    <Content Include="asset\images\others\shape\paypol.png" />
+    <Content Include="asset\images\others\shape\quote.png" />
+    <Content Include="asset\images\product-2\big-img\1.jpg" />
+    <Content Include="asset\images\product-2\big-img\2.jpg" />
+    <Content Include="asset\images\product-2\big-img\3.jpg" />
+    <Content Include="asset\images\product-2\cart-img\1.jpg" />
+    <Content Include="asset\images\product-2\cart-img\2.jpg" />
+    <Content Include="asset\images\product-2\cart-img\3.jpg" />
+    <Content Include="asset\images\product-2\cart-img\4.jpg" />
+    <Content Include="asset\images\product-2\pro-1\1.jpg" />
+    <Content Include="asset\images\product-2\pro-1\2.jpg" />
+    <Content Include="asset\images\product-2\pro-1\3.jpg" />
+    <Content Include="asset\images\product-2\pro-1\4.jpg" />
+    <Content Include="asset\images\product-2\sm-img-2\1.jpg" />
+    <Content Include="asset\images\product-2\sm-img-2\2.jpg" />
+    <Content Include="asset\images\product-2\sm-img-2\3.jpg" />
+    <Content Include="asset\images\product-2\sm-img-3\1.jpg" />
+    <Content Include="asset\images\product-2\sm-img-3\2.jpg" />
+    <Content Include="asset\images\product-2\sm-img-3\3.jpg" />
+    <Content Include="asset\images\product-2\sm-smg\1.jpg" />
+    <Content Include="asset\images\product-2\sm-smg\2.jpg" />
+    <Content Include="asset\images\product-3\1.jpg" />
+    <Content Include="asset\images\product-3\2.jpg" />
+    <Content Include="asset\images\product-3\3.jpg" />
+    <Content Include="asset\images\product-3\4.jpg" />
+    <Content Include="asset\images\product-3\5.jpg" />
+    <Content Include="asset\images\product-3\6.jpg" />
+    <Content Include="asset\images\product-3\7.jpg" />
+    <Content Include="asset\images\product-3\8.jpg" />
+    <Content Include="asset\images\product-3\9.jpg" />
+    <Content Include="asset\images\product\1.jpg" />
+    <Content Include="asset\images\product\10.jpg" />
+    <Content Include="asset\images\product\11.jpg" />
+    <Content Include="asset\images\product\12.jpg" />
+    <Content Include="asset\images\product\2.jpg" />
+    <Content Include="asset\images\product\3.jpg" />
+    <Content Include="asset\images\product\4.jpg" />
+    <Content Include="asset\images\product\5.jpg" />
+    <Content Include="asset\images\product\6.jpg" />
+    <Content Include="asset\images\product\7.jpg" />
+    <Content Include="asset\images\product\8.jpg" />
+    <Content Include="asset\images\product\9.jpg" />
+    <Content Include="asset\images\slider\bg\1.jpg" />
+    <Content Include="asset\images\slider\bg\2.jpg" />
+    <Content Include="asset\images\slider\fornt-img\1.png" />
+    <Content Include="asset\images\slider\fornt-img\2.png" />
+    <Content Include="asset\images\test\client\1.png" />
+    <Content Include="asset\images\test\client\2.png" />
+    <Content Include="asset\js\ajax-mail.js" />
+    <Content Include="asset\js\bootstrap.min.js" />
+    <Content Include="asset\js\contact-map.js" />
+    <Content Include="asset\js\main.js" />
+    <Content Include="asset\js\owl.carousel.min.js" />
+    <Content Include="asset\js\plugins.js" />
+    <Content Include="asset\js\slick.min.js" />
+    <Content Include="asset\js\style-customizer.js" />
+    <Content Include="asset\js\vendor\jquery-3.2.1.min.js" />
+    <Content Include="asset\js\vendor\modernizr-3.5.0.min.js" />
+    <Content Include="asset\js\waypoints.min.js" />
+    <Content Include="asset\style.css" />
     <Content Include="Global.asax" />
+    <Content Include="Views\sample\blog-details.html" />
+    <Content Include="Views\sample\blog.html" />
+    <Content Include="Views\sample\cart.html" />
+    <Content Include="Views\sample\checkout.html" />
+    <Content Include="Views\sample\contact.html" />
+    <Content Include="Views\sample\index.html" />
+    <Content Include="Views\sample\product-details.html" />
+    <Content Include="Views\sample\product-grid.html" />
+    <Content Include="Views\sample\wishlist.html" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -1091,44 +1246,45 @@
     <Compile Include="Areas\Panel\Controllers\BrandController.cs" />
     <Compile Include="Areas\Panel\Controllers\CategoryController.cs" />
     <Compile Include="Areas\Panel\Controllers\ProductController.cs" />
+    <Compile Include="Areas\Panel\Models\altin.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>altin.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Areas\Panel\Models\altin.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>altin.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Areas\Panel\Models\altin.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>altin.edmx</DependentUpon>
+    </Compile>
     <Compile Include="Areas\Panel\Models\brand.cs">
-      <DependentUpon>GSModel.tt</DependentUpon>
+      <DependentUpon>altin.tt</DependentUpon>
     </Compile>
     <Compile Include="Areas\Panel\Models\category.cs">
-      <DependentUpon>GSModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Areas\Panel\Models\GSModel.Context.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>GSModel.Context.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Areas\Panel\Models\GSModel.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>GSModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Areas\Panel\Models\GSModel.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>GSModel.edmx</DependentUpon>
+      <DependentUpon>altin.tt</DependentUpon>
     </Compile>
     <Compile Include="Areas\Panel\Models\Interface\IRepository.cs" />
     <Compile Include="Areas\Panel\Models\product.cs">
-      <DependentUpon>GSModel.tt</DependentUpon>
+      <DependentUpon>altin.tt</DependentUpon>
     </Compile>
     <Compile Include="Areas\Panel\Models\productImage.cs">
-      <DependentUpon>GSModel.tt</DependentUpon>
+      <DependentUpon>altin.tt</DependentUpon>
     </Compile>
     <Compile Include="Areas\Panel\Models\Repository\BrandRepository.cs" />
     <Compile Include="Areas\Panel\Models\Repository\CategoryRepository.cs" />
     <Compile Include="Areas\Panel\Models\Repository\ProductRepository.cs" />
     <Compile Include="Areas\Panel\Models\role.cs">
-      <DependentUpon>GSModel.tt</DependentUpon>
+      <DependentUpon>altin.tt</DependentUpon>
     </Compile>
     <Compile Include="Areas\Panel\Models\user.cs">
-      <DependentUpon>GSModel.tt</DependentUpon>
+      <DependentUpon>altin.tt</DependentUpon>
     </Compile>
     <Compile Include="Areas\Panel\PanelAreaRegistration.cs" />
+    <Compile Include="Controllers\ShopController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -1216,16 +1372,51 @@
     <Content Include="Areas\Panel\Views\Brand\Delete.cshtml" />
     <Content Include="Areas\Panel\Views\Product\Index.cshtml" />
     <Content Include="Areas\Panel\Views\Product\Create.cshtml" />
-    <EntityDeploy Include="Areas\Panel\Models\GSModel.edmx">
-      <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>GSModel.Designer.cs</LastGenOutput>
-    </EntityDeploy>
-    <Content Include="Areas\Panel\Models\GSModel.edmx.diagram">
-      <DependentUpon>GSModel.edmx</DependentUpon>
-    </Content>
     <Content Include="Areas\Panel\Views\Product\Edit.cshtml" />
     <Content Include="Areas\Panel\Views\Product\Delete.cshtml" />
+    <Content Include="asset\css\plugins\fonts\slick.eot" />
+    <Content Include="asset\css\plugins\fonts\slick.ttf" />
+    <Content Include="asset\css\plugins\fonts\slick.woff" />
+    <Content Include="asset\fonts\fontawesome-webfont.eot" />
+    <Content Include="asset\fonts\fontawesome-webfont.ttf" />
+    <Content Include="asset\fonts\fontawesome-webfont.woff" />
+    <Content Include="asset\fonts\fontawesome-webfont.woff2" />
+    <Content Include="asset\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="asset\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="asset\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="asset\fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="asset\fonts\Material-Design-Iconic-Font.eot" />
+    <Content Include="asset\fonts\Material-Design-Iconic-Font.ttf" />
+    <Content Include="asset\fonts\Material-Design-Iconic-Font.woff" />
+    <Content Include="asset\fonts\Material-Design-Iconic-Font.woff2" />
+    <Content Include="asset\fonts\Simple-Line-Icons.eot" />
+    <Content Include="asset\fonts\Simple-Line-Icons.ttf" />
+    <Content Include="asset\fonts\Simple-Line-Icons.woff" />
+    <Content Include="asset\fonts\Simple-Line-Icons.woff2" />
+    <Content Include="asset\images\bg\Thumbs.db" />
+    <Content Include="asset\images\cart\Thumbs.db" />
+    <Content Include="asset\images\icons\Thumbs.db" />
+    <Content Include="asset\images\others\shape\Thumbs.db" />
+    <Content Include="asset\images\product-2\big-img\Thumbs.db" />
+    <Content Include="asset\images\product-2\cart-img\Thumbs.db" />
+    <Content Include="asset\images\product-2\pro-1\Thumbs.db" />
+    <Content Include="asset\images\product-2\sm-img-2\Thumbs.db" />
+    <Content Include="asset\images\product-2\sm-smg\Thumbs.db" />
+    <Content Include="asset\images\product\Thumbs.db" />
+    <Content Include="asset\images\test\client\Thumbs.db" />
+    <EntityDeploy Include="Areas\Panel\Models\altin.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>altin.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="Areas\Panel\Models\altin.edmx.diagram">
+      <DependentUpon>altin.edmx</DependentUpon>
+    </Content>
     <None Include="packages.config" />
+    <Content Include="Views\_Shared\_header.cshtml" />
+    <Content Include="Views\_Shared\_footer.cshtml" />
+    <Content Include="Views\_Shared\_LayoutPage1.cshtml" />
+    <Content Include="Views\Shop\PartialCategory.cshtml" />
+    <Content Include="Views\Shop\Products.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -1235,7 +1426,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Controllers\" />
     <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
