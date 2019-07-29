@@ -1,0 +1,44 @@
+﻿@model goldStore.Areas.Panel.Models.category
+
+@{
+    ViewBag.Title = "Delete";
+    Layout = "~/Areas/Panel/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+
+
+<h3>Bu kaydı silmek istedeğinizden emin misiniz?</h3>
+<div>
+  
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.categoryName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.categoryName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.image)
+        </dt>
+
+        <dd>
+            @if (Model.image != null)
+            {
+                <img style="width:70px;height:60px;" src="data:image;base64,@System.Convert.ToBase64String(Model.image)" alt="@Model.categoryName" />
+            }
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>

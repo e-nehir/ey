@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="18e7dc908ccd4c8084e5cbe4ed93b0cb" Name="Diagram1">
+        <EntityTypeShape EntityType="goldstoreModel1.brand" Width="1.5" PointX="0.75" PointY="1.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="goldstoreModel1.category" Width="1.5" PointX="0.75" PointY="5.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="goldstoreModel1.prodcutImage" Width="1.5" PointX="5.25" PointY="1.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="goldstoreModel1.product" Width="1.5" PointX="3" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="goldstoreModel1.role" Width="1.5" PointX="2.75" PointY="7.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="goldstoreModel1.user" Width="1.5" PointX="5" PointY="6" IsExpanded="true" />
+        <AssociationConnector Association="goldstoreModel1.FK__product__brandId__15502E78" ManuallyRouted="false" />
+        <AssociationConnector Association="goldstoreModel1.FK__product__categor__145C0A3F" ManuallyRouted="false" />
+        <AssociationConnector Association="goldstoreModel1.FK__prodcutIm__produ__182C9B23" ManuallyRouted="false" />
+        <AssociationConnector Association="goldstoreModel1.FK__user__roleId__1CF15040" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

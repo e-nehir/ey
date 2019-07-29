@@ -1,0 +1,47 @@
+﻿@model IEnumerable<goldStore.Areas.Panel.Models.brand>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Areas/Panel/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Yeni Marka", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.brandName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.image)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.brandName)
+        </td>
+        <td>
+            @if (item.image == null)
+            {
+                <img style="width:70px;height:60px;" src="~/Areas/Panel/Content/noimage.jfif" />
+            }
+            else
+            {
+                <img style="width:70px;height:60px;" src="data:image;base64,@System.Convert.ToBase64String(item.image)" alt="@item.brandName" />
+            }
+        </td>
+        <td>
+            @Html.ActionLink("Düzelt", "Edit", new { id=item.brandId }) |
+         
+            @Html.ActionLink("Sil", "Delete", new { id=item.brandId })
+        </td>
+    </tr>
+}
+
+</table>

@@ -1,0 +1,83 @@
+﻿@model IEnumerable<goldStore.Areas.Panel.Models.product>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Areas/Panel/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayName("Resim")
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.productName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.oldPrice)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.price)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.stock)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.description)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.categoryId)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.brandId)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @if (item.productImage.Count==0)
+            {
+                <img style="width:70px;height:60px;" src="~/Areas/Panel/Content/noimage.jfif" />
+            }
+            else
+            {
+                <img style="width:70px;height:60px;" src="data:image;base64,@System.Convert.ToBase64String(item.productImage.FirstOrDefault().image)" alt="@item.productName" />
+            }
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.productName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.oldPrice)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.price)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.stock)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.description)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.category.categoryName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.brand.brandName)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id = item.productId }) |
+            @Html.ActionLink("Details", "Details", new { id = item.productId }) |
+            @Html.ActionLink("Delete", "Delete", new { id = item.productId })
+        </td>
+    </tr>
+}
+
+</table>
