@@ -1,0 +1,26 @@
+﻿@model IEnumerable<goldStore.Areas.Panel.Models.brand>
+
+<div class="htc__brand__area bg__cat--4">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="ht__brand__inner">
+                    <ul class="brand__list owl-carousel clearfix">
+                        @foreach (var brand in Model)
+                        {
+                        <li>
+                            <a href="@Url.Action("Products","Shop", new {brandId=brand.brandId })">
+                                <img src="@Url.Action("BrandThumbnail","Shop", new {width=116,height=84,Id=brand.brandId})" alt="@brand.image" />
+                            </a>
+                        </li> 
+                                                    
+
+                           
+                        }
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

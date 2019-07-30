@@ -55,47 +55,10 @@
                             <div class="col-md-7 col-lg-8 col-sm-5 col-xs-3">
                                 <nav class="main__menu__nav hidden-xs hidden-sm">
                                     <ul class="main__menu">
-                                        <li class="drop"><a href="/asset/css/index.html">Home</a></li>
-                                        <li class="drop">
-                                            <a href="/asset/css/#">women</a>
-                                            <ul class="dropdown mega_dropdown">
-                                                <!-- Start Single Mega MEnu -->
-                                                <li>
-                                                    <a class="mega__title" href="product-grid.html">Shop Pages</a>
-                                                    <ul class="mega__item">
-                                                        <li><a href="/asset/css/product-grid.html">Product Grid</a></li>
-                                                        <li><a href="/asset/css/cart.html">cart</a></li>
-                                                        <li><a href="/asset/csscheckout.html">checkout</a></li>
-                                                        <li><a href="/asset/csswishlist.html">wishlist</a></li>
-                                                    </ul>
-                                                </li>
-                                                <!-- End Single Mega MEnu -->
-                                                <!-- Start Single Mega MEnu -->
-                                                <li>
-                                                    <a class="mega__title" href="product-grid.html">Variable Product</a>
-                                                    <ul class="mega__item">
-                                                        <li><a href="/asset/css/#">Category</a></li>
-                                                        <li><a href="/asset/css/#">My Account</a></li>
-                                                        <li><a href="/asset/css/wishlist.html">Wishlist</a></li>
-                                                        <li><a href="/asset/css/cart.html">Shopping Cart</a></li>
-                                                        <li><a href="/asset/css/checkout.html">Checkout</a></li>
-                                                    </ul>
-                                                </li>
-                                                <!-- End Single Mega MEnu -->
-                                                <!-- Start Single Mega MEnu -->
-                                                <li>
-                                                    <a class="mega__title" href="product-grid.html">Product Types</a>
-                                                    <ul class="mega__item">
-                                                        <li><a href="/asset/css/#">Simple Product</a></li>
-                                                        <li><a href="/asset/css/#">Variable Product</a></li>
-                                                        <li><a href="/asset/css/#">Grouped Product</a></li>
-                                                        <li><a href="/asset/css/#">Downloadable Product</a></li>
-                                                        <li><a href="/asset/css/#">Simple Product</a></li>
-                                                    </ul>
-                                                </li>
-                                                <!-- End Single Mega MEnu -->
-                                            </ul>
-                                        </li>
+                                        <li class="drop"><a href="@Url.Action("/","Shop")">Anasayfa</a></li>
+                                        <li class="drop"><a href="@Url.Action(" Products","Shop")">Ürünler</a></li>
+                                        <li class="drop"><a href="@Url.Action("Contect","Shop")">İletişim</a></li>
+                                       
                                         <li class="drop">
                                             <a href="/asset/css/#">men</a>
                                             <ul class="dropdown mega_dropdown">
@@ -165,6 +128,8 @@
                                         </li>
                                         <li><a href="/asset/css/contact.html">contact</a></li>
                                     </ul>
+
+
                                 </nav>
 
                                 <div class="mobile-menu clearfix visible-xs visible-sm">
@@ -220,14 +185,12 @@
                     <div class="row">
                         <div class="col-md-12">
                             <div class="search__inner">
-                                <form action="#" method="get">
-                                    <input placeholder="Search here... " type="text">
+
+                                @using (Html.BeginForm("Products", "Shop", FormMethod.Get, new { id = "pageSizeForm" }))
+                                {<input placeholder="Search here... " type="text" id="search" name="search">
                                     <button type="submit"></button>
-                                </form>
-                                <div class="search__close__btn">
-                                    <span class="search__close__btn_icon"><i class="zmdi zmdi-close"></i></span>
+                                }
                                 </div>
-                            </div>
                         </div>
                     </div>
                 </div>
