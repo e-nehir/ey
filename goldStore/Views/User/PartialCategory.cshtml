@@ -1,0 +1,9 @@
+﻿@model IEnumerable<goldStore.Areas.Panel.Models.category>
+<ul class="ht__cat__list">
+    @foreach (var item in Model)
+    {
+        <li><a href="@Url.Action("Products","Shop",new {categoryId=item.categoryId })">@item.categoryName</a></li>
+    }
+
+
+</ul>

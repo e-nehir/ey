@@ -1284,17 +1284,23 @@
     <Compile Include="Areas\Panel\Models\Repository\BrandRepository.cs" />
     <Compile Include="Areas\Panel\Models\Repository\CategoryRepository.cs" />
     <Compile Include="Areas\Panel\Models\Repository\ProductRepository.cs" />
+    <Compile Include="Areas\Panel\Models\Repository\UserRepository.cs" />
     <Compile Include="Areas\Panel\Models\role.cs">
       <DependentUpon>altin.tt</DependentUpon>
     </Compile>
+    <Compile Include="Areas\Panel\Models\Securety\Sifrele.cs" />
     <Compile Include="Areas\Panel\Models\user.cs">
       <DependentUpon>altin.tt</DependentUpon>
     </Compile>
     <Compile Include="Areas\Panel\PanelAreaRegistration.cs" />
     <Compile Include="Controllers\ShopController.cs" />
+    <Compile Include="Controllers\UserController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\ViewModel\Login.cs" />
+    <Compile Include="Models\ViewModel\Register.cs" />
+    <Compile Include="Models\ViewModel\Role\Role.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -1428,6 +1434,12 @@
     <Content Include="Views\Shop\ProductDetail.cshtml" />
     <Content Include="Views\Shop\PartialNewArrivals.cshtml" />
     <Content Include="Views\Shop\PartialBrands.cshtml" />
+    <Content Include="Views\User\PartialBrands.cshtml" />
+    <Content Include="Views\User\PartialCategory.cshtml" />
+    <Content Include="Views\User\PartialNewArrivals.cshtml" />
+    <Content Include="Views\User\PartialPrice.cshtml" />
+    <Content Include="Views\User\Register.cshtml" />
+    <Content Include="Views\User\Login.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -1437,7 +1449,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
