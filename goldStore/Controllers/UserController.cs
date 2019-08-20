@@ -173,7 +173,7 @@ namespace goldStore.Controllers
             {
                 user user = repoUser.GetAll().Where(x => x.email == login.email).FirstOrDefault();
                 if(user==null)
-                {
+                {//881118
                     message = "Email kaydı bulunamadı";
                     ViewBag.message = message;
                     ViewBag.status = status;
